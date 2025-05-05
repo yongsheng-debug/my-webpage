@@ -1,0 +1,46 @@
+<main>
+  <div class="container">
+    <div class="left-column">
+      <h2>我的兴趣爱好</h2>
+      <ul>
+        <li>编程</li>
+        <li>看书</li>
+        <li>旅行</li>
+      </ul>
+
+      <h2>我的每日任务</h2>
+      <ol>
+        <li>检查邮箱</li>
+        <li>完成编程作业</li>
+        <li>参加团队会议</li>
+      </ol>
+    </div>
+
+    <div class="right-column">
+      <img src="your-image.jpg" alt="图片描述">
+    </div>
+  </div>
+</main>
+
+<style>
+  .container {
+    display: grid;
+    grid-template-columns: 60% 35%; /* 设置两列布局 */
+    gap: 20px; /* 列间距 */
+    padding: 40px;
+  }
+
+  .left-column {
+    /* 左侧区域 */
+  }
+
+  .right-column {
+    /* 右侧区域 */
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 10px; /* 可选：给图片添加圆角效果 */
+  }
+</style>

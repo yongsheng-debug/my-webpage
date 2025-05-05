@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的美化网页</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 50% 50%;  /* 设置两列布局 */
+      grid-template-rows: auto auto;  /* 两行布局 */
+      grid-template-areas: 
+        "left-image right-image"  /* 第一行：左图右图 */
+        "left-text right-text";   /* 第二行：左文右文 */
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .left-image {
+      grid-area: left-image;
+      width: 100%;
+      height: 300px; /* 控制图片高度 */
+      background-image: url('left-image.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+
+    .right-image {
+      grid-area: right-image;
+      width: 100%;
+      height: 300px; /* 控制图片高度 */
+      background-image: url('right-image.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+    }
+
+    .left-text {
+      grid-area: left-text;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .right-text {
+      grid-area: right-text;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="text-align: center;">欢迎来到我的网页！</h1>
+  </header>
+
+  <div class="container">
+    <!-- 左侧图片 -->
+    <div class="left-image"></div>
+
+    <!-- 右侧图片 -->
+    <div class="right-image"></div>
+
+    <!-- 左侧文字 -->
+    <div class="left-text">
+      <h2>我的兴趣爱好</h2>
+      <ul>
+        <li>编程</li>
+        <li>看书</li>
+        <li>旅行</li>
+      </ul>
+    </div>
+
+    <!-- 右侧文字 -->
+    <div class="right-text">
+      <h2>我的每日任务</h2>
+      <ol>
+        <li>检查邮箱</li>
+        <li>完成编程作业</li>
+        <li>参加团队会议</li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align: center;">© 2025 我的名字 | 联系邮箱：yourname@example.com</p>
+  </footer>
+</body>
+</html>

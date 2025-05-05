@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>我的美化网页</title>
+  <style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      font-family: "Microsoft YaHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    header {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    main {
+      display: flex; /* 使用Flexbox布局 */
+      justify-content: space-between; /* 分散对齐 */
+      padding: 40px;
+    }
+
+    .left-column {
+      width: 60%; /* 左侧区域宽度 */
+      padding-right: 20px;
+    }
+
+    .right-column {
+      width: 35%; /* 右侧区域宽度 */
+      text-align: center;
+    }
+
+    img {
+      width: 100%; /* 图片宽度占满右侧区域 */
+      border-radius: 10px; /* 可选：给图片添加圆角效果 */
+    }
+
+    h2 {
+      color: #f5f5f5;
+    }
+
+    ul, ol {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>欢迎来到我的网页！</h1>
+  </header>
+
+  <main>
+    <!-- 左侧文本内容 -->
+    <div class="left-column">
+      <h2>我的兴趣爱好</h2>
+      <ul>
+        <li>编程</li>
+        <li>看书</li>
+        <li>旅行</li>
+      </ul>
+
+      <h2>我的每日任务</h2>
+      <ol>
+        <li>检查邮箱</li>
+        <li>完成编程作业</li>
+        <li>参加团队会议</li>
+      </ol>
+    </div>
+
+    <!-- 右侧图片 -->
+    <div class="right-column">
+      <img src="your-image.jpg" alt="图片描述">
+    </div>
+  </main>
+
+  <footer>
+    © 2025 我的名字 | 联系邮箱：yourname@example.com
+  </footer>
+</body>
+</html>
